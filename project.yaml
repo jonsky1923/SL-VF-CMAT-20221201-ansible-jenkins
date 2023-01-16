@@ -25,8 +25,6 @@
           - name: "install tomcat9"
             apt:
                     name: tomcat9
-                    update_cache: yes
-                    become: true
             notify: "enable tomcat service"
           - name: "deploy WAR file"
             copy:
